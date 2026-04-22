@@ -17,7 +17,7 @@ In **Site administration**, open **Settings** → **Site configurations** → **
 Enter the **first segment of the URL path** NADA should use—for example `catalog`, `home`, or `about`—matching a **menu entry** or a static page name (see below).
 
 <!-- Screenshot: Settings → General → Default home page -->
-![](~@imageBase/images/all-pages.png?customizing-home-page-settings-default-home.png)
+![](~@imageBase/images/settings-default-home.png)
 
 ### Build content with menus
 
@@ -85,8 +85,6 @@ Choose one approach:
 
 Ensure **Default home page** is set to **`home`** so the site root uses this view.
 
-<!-- Screenshot: IDE or file tree showing static/custom/home.php -->
-![](~@imageBase/images/all-pages.png?customizing-home-page-static-custom-folder.png)
 
 ### Other static slugs
 
