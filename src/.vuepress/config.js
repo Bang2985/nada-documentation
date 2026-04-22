@@ -143,6 +143,7 @@ module.exports = {
               '/admin-guide/web-ui/login',
               '/admin-guide/web-ui/dashboard',
               '/admin-guide/web-ui/site-configurations',
+              '/admin-guide/web-ui/customizing-home-page',
               '/admin-guide/web-ui/countries',
               '/admin-guide/web-ui/regions',
               '/admin-guide/web-ui/site-menus',

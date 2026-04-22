@@ -27,7 +27,8 @@ displays at the bottom of your site page.
 
 **Default home page**: The initial page that loads when a user visits
 the NADA site can be set here. In this case the catalog page is set to
-open by default.
+open by default. For a full guide (menus, static views, and the default
+`home.php` template), see [Customizing the home page](/admin-guide/web-ui/customizing-home-page/).
 
 **Webmaster name**: The name of the webmaster can be set here. This is
 the name that will be used in system emails sent to users.
