@@ -33,10 +33,8 @@ The value in **Default home page** must match the **URL / slug** of the menu pag
 :::
 
 <!-- Screenshot: Menu → All pages, showing page URL/slug column if applicable -->
-![](~@imageBase/images/all-pages.png?customizing-home-page-menu-pages-list.png)
+![](~@imageBase/images/customizing-home-page-menu-pages-list.png)
 
-<!-- Screenshot: Edit page – HTML body (optional) -->
-![](~@imageBase/images/all-pages.png?customizing-home-page-menu-edit-html.png)
 
 If **Default home page** is left unset, NADA falls back to other rules (such as the lowest-weight menu item). Configure **Default home page** explicitly to avoid surprises.
 
@@ -107,15 +105,3 @@ Deploying files under `application/views/static/custom/` requires access to the 
 | Menus + **Default home page** | Editorial HTML, redirects, no server access | Site administration |
 | **`views/static/custom/{slug}.php`** | PHP layouts, reuse of NADA helpers/models, full control | Server filesystem |
 
----
-
-## Screenshots to add
-
-Replace the placeholder images above by saving captures under `src/.vuepress/public/images/` using these filenames (or rename and update the markdown):
-
-| Filename | Suggested content |
-|----------|-------------------|
-| `customizing-home-page-settings-default-home.png` | **Settings → General site settings** with **Default home page** visible |
-| `customizing-home-page-menu-pages-list.png` | **Menu → All pages** listing pages/links relevant to home |
-| `customizing-home-page-menu-edit-html.png` | Editing a menu HTML page used as home content |
-| `customizing-home-page-static-custom-folder.png` | Project view showing `application/views/static/custom/home.php` |
