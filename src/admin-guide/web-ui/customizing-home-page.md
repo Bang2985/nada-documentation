@@ -3,7 +3,7 @@
 The **home page** is what visitors see when they open your NADA site root URL (no path after the domain). NADA resolves that request in `Page` (default front controller): it uses your **default home page** setting, then menu definitions, and optionally **static PHP views**. You can customize the experience in two main ways—through **Site administration** (menus and settings), or by placing files under **`application/views/static/custom/`** for advanced control.
 
 ::: tip Relationship to other settings
-The **Website title** and **Website footer** text are set under [Site configurations](/admin-guide/web-ui/site-configurations/). Top navigation and custom pages are managed under [Site menus](/admin-guide/web-ui/site-menus/). For branding in the site chrome (logo, header layout), edit your **theme** (see the [theme section](/installation-guide/upgrade/upgrade-50.html#updating-the-site-theme-template) in the upgrade guide).
+The **Website title** and **Website footer** text are set under [Site configurations](/admin-guide/web-ui/site-configurations/). Top navigation and custom pages are managed under [Site menus](/admin-guide/web-ui/site-menus/). For the **site header, footer, and styling** (including **`themes/nada52/css/custom.css`**), see [Customizing themes](/installation-guide/configurations/customizing-themes/).
 :::
 
 ## 1. Using Site administration (menus and settings)
@@ -17,7 +17,7 @@ In **Site administration**, open **Settings** → **Site configurations** → **
 Enter the **first segment of the URL path** NADA should use—for example `catalog`, `home`, or `about`—matching a **menu entry** or a static page name (see below).
 
 <!-- Screenshot: Settings → General → Default home page -->
-![](~@imageBase/images/settings-default-home.png)
+![](~@imageBase/images/all-pages.png?customizing-home-page-settings-default-home.png)
 
 ### Build content with menus
 
@@ -33,8 +33,12 @@ The value in **Default home page** must match the **URL / slug** of the menu pag
 :::
 
 <!-- Screenshot: Menu → All pages, showing page URL/slug column if applicable -->
-![](~@imageBase/images/customizing-home-page-menu-pages-list.png)
+![](~@imageBase/images/all-pages.png?customizing-home-page-menu-pages-list.png)
 
+<!-- Screenshot: Edit page – HTML body (optional) -->
+![](~@imageBase/images/all-pages.png?customizing-home-page-menu-edit-html.png)
+
+If **Default home page** is left unset, NADA falls back to other rules (such as the lowest-weight menu item). Configure **Default home page** explicitly to avoid surprises.
 
 ---
 
@@ -83,6 +87,8 @@ Choose one approach:
 
 Ensure **Default home page** is set to **`home`** so the site root uses this view.
 
+<!-- Screenshot: IDE or file tree showing static/custom/home.php -->
+![](~@imageBase/images/all-pages.png?customizing-home-page-static-custom-folder.png)
 
 ### Other static slugs
 
@@ -100,3 +106,16 @@ Deploying files under `application/views/static/custom/` requires access to the 
 |----------|-----------|--------|
 | Menus + **Default home page** | Editorial HTML, redirects, no server access | Site administration |
 | **`views/static/custom/{slug}.php`** | PHP layouts, reuse of NADA helpers/models, full control | Server filesystem |
+
+---
+
+## Screenshots to add
+
+Replace the placeholder images above by saving captures under `src/.vuepress/public/images/` using these filenames (or rename and update the markdown):
+
+| Filename | Suggested content |
+|----------|-------------------|
+| `customizing-home-page-settings-default-home.png` | **Settings → General site settings** with **Default home page** visible |
+| `customizing-home-page-menu-pages-list.png` | **Menu → All pages** listing pages/links relevant to home |
+| `customizing-home-page-menu-edit-html.png` | Editing a menu HTML page used as home content |
+| `customizing-home-page-static-custom-folder.png` | Project view showing `application/views/static/custom/home.php` |

@@ -89,6 +89,7 @@ module.exports = {
               '/installation-guide/configurations/email',
               '/installation-guide/configurations/email-advanced',
               '/installation-guide/configurations/google-analytics',
+              '/installation-guide/configurations/customizing-themes',
               '/installation-guide/configurations/clean-urls',
               '/installation-guide/configurations/csp'
             ]

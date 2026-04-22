@@ -21,7 +21,8 @@ catalog. In the user interface:
 ![](~@imageBase/images/image58.png)
 
 **Website footer**: The footer text can be changed in this field. This
-displays at the bottom of your site page.
+displays at the bottom of your site page when your theme outputs it (see
+[Customizing themes](/installation-guide/configurations/customizing-themes/)).
 
 ![](~@imageBase/images/image59.png)
 
